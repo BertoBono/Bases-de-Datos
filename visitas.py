@@ -110,7 +110,6 @@ def iniciar():
 
     conn.execute(qry)
 
-
 if __name__ == '__main__':
     iniciar()
 
@@ -123,8 +122,12 @@ if __name__ == '__main__':
     # egresa_visita(20481024)
     # egresa_visita(46204923)
     
-    # Imprimir a todas las personas que aún no hayan salido de la institución #
-    # lista_visitantes_en_institucion()
+    # Imprimir a todas las personas que aún no hayan salido de la institución
+    print("Lista de visitantes que aún se encuentran en la institución: ")
+    lista_visitantes_en_institucion()
 
-    # Imprimir a todas las personas, sin importar si se encuentren o no en la institución, en los que alguno de los datos coincidan # 
-    # busca_vistantes("2022-5-11T", "2022-5-11T", "Secretaría", 3492192)
+    print('\n\n\n')
+
+    # Imprimir a todas las personas, sin importar si se encuentren o no en la institución, en los que alguno de los datos coincidan
+    print("Lista de visitantes según los criterios dados: ")
+    busca_vistantes("2022-5-11T", "2022-5-11T", "Secretaría", 3492192)
